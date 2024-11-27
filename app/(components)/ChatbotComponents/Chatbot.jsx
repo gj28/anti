@@ -61,7 +61,7 @@ function Chatbot({ showChatbot, onClose }) {
     ]);
 
     try {
-      const response = await fetch("https://aws.antiai.ltd/apii", {
+      const response = await fetch("https://aws.antiai.ltd/apii/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message }),
